@@ -44,6 +44,7 @@ function updateImages(playerChoice, aiChoice) {
 
 function selectWinner(player, ai) {
   if (player == ai) {
+    winner.style.color = "white";
     return "Draw";
   } else if (weapons[player].weakness.includes(ai)) {
     winner.style.color = "rgb(204, 48, 48)";
