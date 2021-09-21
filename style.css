@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: radial-gradient(rgb(10, 71, 114), rgb(0, 23, 39));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+  margin: 5rem 0;
+  font-size: 4rem;
+}
+.player-choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.player-choice button {
+  padding: 2rem;
+  margin: 0 2rem;
+  background-color: white;
+  border: rgb(8, 104, 173) solid 1rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.player-choice button:hover {
+  background-color: rgb(130, 178, 214);
+}
+.player-choice button img {
+  width: 80%;
+  pointer-events: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-height: 50rem;
+}
+.container #player,
+.container #ai {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container div .holder {
+  background-color: white;
+  border: rgb(8, 104, 173) solid 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+}
+.container div .holder img {
+  width: 60%;
+}
+#ai .holder {
+  border: rgb(204, 48, 48) solid 1.5rem;
+}
+.container div h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-size: 3rem;
+  margin: 5rem;
+}
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 630px) {
+  html {
+    font-size: 30%;
+  }
+  .player-choice {
+    width: 100%;
+  }
+}
